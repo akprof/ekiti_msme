@@ -1,67 +1,68 @@
-/* Task 1.1: Container */
-    .container {
-      width: 500px;
-      height: 300px;
-      background-color: lightgray;
-      padding: 20px;
-      border: 2px solid black; 
-      position: relative; 
-      margin: 50px auto; 
-    }
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
 
-    /* Task 1.2: Content */
-    .content {
-      width: 400px;
-      height: 200px;
-      background-color: white;
-      margin: 0 auto; 
-      padding: 10px;
-      overflow: scroll; 
-    }
+/* Header */
+header {
+  background-color: #004080; /* deep blue */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-    /* Task 4.1: Absolute Positioning */
-    .absolute {
-      width: 100px;
-      height: 50px;
-      background-color: tomato;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      color: white;
-      text-align: center;
-      line-height: 50px;
-    }
+/* Main Content */
+main {
+  background-color: #f0f0f0; /* light gray */
+  padding: 20px;
+}
 
-    /* Task 4.2: Relative Positioning */
-    .relative {
-      width: 120px;
-      height: 50px;
-      background-color: teal;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      color: white;
-      text-align: center;
-      line-height: 50px;
-    }
+/* Intro Section */
+.intro {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
 
-    /* Task 5.1: Floating Elements */
-    .float-left {
-      width: 150px;
-      height: 100px;
-      background-color: orange;
-      float: left;
-      margin: 10px;
-      text-align: center;
-      line-height: 100px;
-    }
+/* Gradient Section */
+.gradient-box {
+  background: linear-gradient(135deg, #7aff5f, #ef3939); /* orange-pink gradient */
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
 
-    .float-right {
-      width: 150px;
-      height: 100px;
-      background-color: skyblue;
-      float: right;
-      margin: 10px;
-      text-align: center;
-      line-height: 100px;
-    }
+/* List Section */
+.list-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-section li {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Advanced Selectors: odd vs even items */
+.list-section li:nth-child(odd) {
+  background-color: #cce7ff; /* light blue */
+  font-weight: bold;
+}
+
+.list-section li:nth-child(even) {
+  background-color: #ffe6cc; /* light orange */
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+}
