@@ -1,6 +1,17 @@
 /* General Reset */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
@@ -13,9 +24,10 @@ header {
   padding: 20px;
 }
 
-/* Main Content */
+/* Main Content - fills remaining space */
 main {
   background-color: #f0f0f0; /* light gray */
+  flex: 1;   /* takes all available height */
   padding: 20px;
 }
 
@@ -27,7 +39,7 @@ main {
 
 /* Gradient Section */
 .gradient-box {
-  background: linear-gradient(135deg, #7aff5f, #ef3939); /* orange-pink gradient */
+  background: linear-gradient(135deg, #9be383, #f65757); /* orange-pink gradient */
   color: white;
   padding: 30px;
   border-radius: 10px;
